@@ -55,6 +55,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
 nav a {
     padding: 10px;
@@ -64,6 +65,8 @@ nav a {
     color: #ccc;
     transition: 0.5s;
     z-index: 1;
+    border-radius: 5px;
+
 }
 nav a:hover {
     background-color: #ccc;
