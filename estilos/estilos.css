@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body  {
+    font-family: 'Roboto', sans-serif;
+}
+.fundo {
+    background-image: url('../imagens/Where\ are\ WordPress\ Pages\ Stored_\ \(Answered\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    position: relative;
+}
+.fundo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+}
+.limite {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.topo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #59B09E;
+    z-index: 1;
+
+}
+.links {
+    width: 400px;
+   
+}
+.menu a{
+    display: none;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+nav a {
+    padding: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ccc;
+    transition: 0.5s;
+    z-index: 1;
+}
+nav a:hover {
+    background-color: #ccc;
+    color: #3b3b3b;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.perfil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container_perfil {
+    position: relative;
+    z-index: 1;
+}
+.efeito {
+    position: absolute;
+    top: -43%;
+    left: 5%;
+    background-color: #59b09f5e;
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto {
+    background-color: #59B09E;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto img {
+    width: 90%;
+    border-radius: 50%;
+}
+.redes_sociais {
+    position: relative;
+    background-color: #252A30;
+    width: 400px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 15px 15px ;
+    box-shadow: 1px 1px 2px #252a30;
+}
+.informacao_perfil {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.informacao_perfil h1 {
+    text-align: center;
+    margin-top: 200px;
+    padding: 10px;
+    color: #ccc;
+    font-size: 3rem;
+}
+.informacao_perfil span {
+    color: #ccc;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.icones {
+    width: 180px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.icone a {
+    padding: 10px; 
+}
+.icones img {
+    width: 40px;
+}
+.icones img:hover {
+    background-color: #59B09E;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.cor_fundo {
+    background-color: #252A30;
+    padding-bottom: 40px;
+
+}
+.sobre_mim {
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+}
+h2{
+    padding: 30px 0 10px 0;
+    font-size: 2rem;
+    color: #ccc;
+    text-align: center;
+}
+.sobre_mim p {
+    width: 650px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #ccc;
+}
+.container_detlhe_interesse {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.detalhes_pessoais {
+    width: 100%;
+}
+.detalhes_pessoais span{
+    font-size: 1.5rem;
+    color: #ccc;
+    font-weight: 500;
+    margin: 0 0 20px 62px;
+}
+table {
+    text-align: left;
+    display: flex;
+    padding: 30px;
+    border-collapse: separate;
+    font-size: 1.2rem;
+}
+th, td {
+    padding: 7px 30px;
+    color: #ccc;
+}
+td a {
+    color: #ccc;
+    text-decoration: none;
+}
+td a:hover {
+    color: #686767;
+    transition: 0.5s;
+}
+td .status {
+    background-color: #59B09E;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.meus_interesses {
+    width: 50%;
+    padding: 0 0 0 30px;
+}
+.meus_interesses span, .finalizado span, .cursando span{
+    font-size: 1.5rem;
+    color: #ccc;
+    font-weight: 500;
+    margin: 12px;
+}
+.icones_interesse .imagens_interesses {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+.imagens_interesses div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #363d42;
+    box-shadow: 1px 1px 3px #181a1d;
+    border-radius: 5px;
+    text-align: center;
+}
+figcaption {
+    color: #ccc;
+    padding: 5px;
+}
+.icones_interesse img {
+    width: 30px;
+}
+.cor_fundo_escuro_habilidade {
+    background-color: #15171a;
+    height: 380px;
+}
+.cursando_finalizados {
+    display: flex;
+    justify-content: space-around;
+}
+.finalizado {
+    width: 250px;
+    height: 150px;
+}
+.cursos_final {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 30px 0 0;
+    text-align: center;
+}
+.cursos_andamento {
+    padding: 30px 0 0 12px;
+    text-align: center;
+}
+.html, .css, .javascript {
+    width: 90px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #363d42;
+}
+.cursando_finalizados img {
+    width: 50px;
+}
+.projetos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.projetos div {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: #15171a;
+}
+.cor_fundo_escuro {
+    position: relative;
+    background-color: #15171a;
+}
+.container_formulario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+.voltar {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 20px;
+    top: -30px;
+}
+.voltar img {
+    width: 100%;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+label {
+    display: block;
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: 20px;
+}
+textarea {
+    background-color: #252A30;
+    width: 500px;
+    height: 180px;
+    color: #ccc;
+    font-size: 1rem;
+}
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #59B09E;
+    color: #ccc;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #59B09E;
+    margin: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+
+

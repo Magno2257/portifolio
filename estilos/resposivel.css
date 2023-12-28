@@ -1,0 +1,224 @@
+@media (min-width: 325px) and (max-width: 768px) {
+    main {
+        overflow-x: hidden;
+    }
+    .topo {
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    .menu {
+        z-index: 1;
+    }
+    .menu a {
+        display: inline;
+        z-index: 1;
+    }
+    .menu img {
+        width: 30px;
+    }
+    .links {
+        display: none;
+    }
+    .perfil {
+        top: 50%;
+    }
+    .efeito {
+        width: 240px;
+        height: 240px;
+        position: absolute;
+        top: -30%;
+        left: 15%;
+    }
+    .foto {
+        width: 190px;
+        height: 190px;
+    }
+    .redes_sociais {
+        width: 330px;
+        height: 330px;
+    }
+    .informacao_perfil h1 {
+        font-size: 2.8rem;
+        margin-top: 120px;
+    }
+    .sobre_mim {
+        width: 380px;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .sobre_mim p {
+        font-size: 1.1rem;
+    }
+    .container_detlhe_interesse {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .detalhes_pessoais span{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+    }
+    table {
+        text-align: left;
+        display: flex;
+        padding: 30px 0;
+        font-size: 1rem;
+    }
+    td {
+        padding: 6px 5px;
+    }
+    th {
+        padding: 7px 20px;
+    }
+    .meus_interesses {
+        width: 100%;
+    }
+    .icones_interesse .imagens_interesses {
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+        height: 200px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+    }
+    .cor_fundo_escuro_habilidade {
+        height: 430px;
+    }
+    .cursando_finalizados {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .finalizado {
+        width: 250px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .finalizado span, .cursando span {
+        display: block;
+        text-align: center;
+    }
+    .cursos_final {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+    .cursos_andamento {
+        text-align: center;
+        padding: 0 17px;
+    }
+    .projetos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .container_formulario {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    textarea {
+        background-color: #252A30;
+        width: 70%;
+        height: 180px;
+        color: #ccc;
+        font-size: 1rem;
+    }
+    button {
+        width: 150px;
+        height: 40px;
+        background-color: #59B09E;
+        color: #ccc;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px #59B09E;
+        margin-top: 30px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+@media (min-width: 769px) {
+    .logo {
+        font-size: 1.6rem;
+    }
+    .topo {
+        justify-content: space-around;
+    }
+    .links {
+        width: 350px;
+    }
+    .menu img {
+        display: none;
+    }
+    nav {
+        justify-content: space-around;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    .perfil {
+        top: 53%;
+    }
+    .efeito {
+        width: 210px;
+        height: 210px;
+        position: absolute;
+        top: -30%;
+        left: 19%;
+    }
+    .foto {
+        width: 180px;
+        height: 180px;
+    }
+    .redes_sociais {
+        width: 330px;
+        height: 330px;
+    }
+    .informacao_perfil h1 {
+        font-size: 2.8rem;
+        margin-top: 90px;
+    }
+    .informacao_perfil span {
+        font-size: 1rem;
+    }
+    .sobre_mim {
+        width: 700px;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .sobre_mim p {
+        font-size: 1.1rem;
+    }
+    .detalhes_pessoais span {
+        font-size: 1.4rem;
+    }
+    table {
+        font-size: 1rem;
+    }
+    th, td {
+        padding: 6px 20px;
+    }
+    .meus_interesses span, .finalizado span, .cursando span {
+        font-size: 1.4rem;
+    }
+    .finalizado {
+        width: 230px;
+        height: 120px;
+    }
+    .cursos_final {
+        justify-content: space-between;
+    }
+    .projetos {
+        justify-content: space-around;
+    }
+}
