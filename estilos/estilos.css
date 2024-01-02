@@ -13,7 +13,7 @@ body  {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 85vh;
+    height: 100vh;
     position: relative;
 }
 .fundo::after {
@@ -74,6 +74,7 @@ nav a:hover {
     transition: 0.5s;
     border-radius: 5px;
 }
+
 .perfil {
     position: absolute;
     top: 50%;
@@ -151,6 +152,7 @@ nav a:hover {
 }
 .icones img {
     width: 40px;
+    border-radius: 50%;
 }
 .icones img:hover {
     background-color: #59B09E;
@@ -205,7 +207,6 @@ table {
     font-size: 1.2rem;
 }
 th, td {
-    padding: 7px 30px;
     color: #ccc;
 }
 td a {
@@ -216,16 +217,19 @@ td a:hover {
     color: #686767;
     transition: 0.5s;
 }
-td .status {
+.status {
     background-color: #59B09E;
-    width: 110px;
-    height: 25px;
-    text-align: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 30px;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 1rem;
 }
+
 .meus_interesses {
     width: 50%;
     padding: 0 0 0 30px;
@@ -324,9 +328,10 @@ figcaption {
 .voltar {
     width: 65px;
     height: 65px;
-    position: absolute;
-    right: 20px;
-    top: -30px;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+   
 }
 .voltar img {
     width: 100%;

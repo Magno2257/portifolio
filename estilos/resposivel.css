@@ -44,13 +44,14 @@
         margin-top: 120px;
     }
     .sobre_mim {
-        width: 380px;
+        width: 330px;
     }
     h2 {
         font-size: 1.8rem;
     }
     .sobre_mim p {
-        font-size: 1.1rem;
+        width: 100%;
+        font-size: 1rem;
     }
     .container_detlhe_interesse {
         flex-direction: column;
