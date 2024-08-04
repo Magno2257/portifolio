@@ -5,6 +5,17 @@
     scroll-behavior: smooth;
 
 }
+:root {
+    --preto: #000000cc;
+    --pretoClaro: #15171a;
+    --verde: #59B09E;
+    --verdeEfeito: #59b09f5e;
+    --cinza: #ccc;
+    --cinzaEscuro: #3b3b3b;
+    --cinzaEscuro2: #252A30;
+    
+    
+}
 body  {
     font-family: 'Roboto', sans-serif;
 }
@@ -23,7 +34,7 @@ body  {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000cc;
+    background-color: var(--preto);
 }
 .limite {
     width: 100%;
@@ -40,7 +51,7 @@ body  {
 .logo {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #59B09E;
+    color: var(--verde);
     z-index: 1;
 
 }
@@ -62,15 +73,15 @@ nav a {
     font-size: 1.1rem;
     text-decoration: none;
     font-weight: 500;
-    color: #ccc;
+    color: var(--cinza);
     transition: 0.5s;
     z-index: 1;
     border-radius: 5px;
 
 }
 nav a:hover {
-    background-color: #ccc;
-    color: #3b3b3b;
+    background-color: var(--cinza);
+    color: var(--cinzaEscuro);
     transition: 0.5s;
     border-radius: 5px;
 }
@@ -89,7 +100,7 @@ nav a:hover {
     position: absolute;
     top: -43%;
     left: 5%;
-    background-color: #59b09f5e;
+    background-color: var(--verdeEfeito);
     width: 365px;
     height: 365px;
     border-radius: 50%;
@@ -99,7 +110,7 @@ nav a:hover {
     align-items: center;
 }
 .foto {
-    background-color: #59B09E;
+    background-color: var(--verde);
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -113,7 +124,7 @@ nav a:hover {
 }
 .redes_sociais {
     position: relative;
-    background-color: #252A30;
+    background-color: var(--cinzaEscuro2);
     width: 400px;
     height: 380px;
     display: flex;
@@ -132,11 +143,11 @@ nav a:hover {
     text-align: center;
     margin-top: 200px;
     padding: 10px;
-    color: #ccc;
+    color: var(--cinza);
     font-size: 3rem;
 }
 .informacao_perfil span {
-    color: #ccc;
+    color: var(--cinza);
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -155,14 +166,14 @@ nav a:hover {
     border-radius: 50%;
 }
 .icones img:hover {
-    background-color: #59B09E;
+    background-color: var(--verde);
     width: 40px;
     height: 40px;
     transition: 0.5s;
     border-radius: 50%;
 }
 .cor_fundo {
-    background-color: #252A30;
+    background-color: var(--cinzaEscuro2);
     padding-bottom: 40px;
 
 }
@@ -174,7 +185,7 @@ nav a:hover {
 h2{
     padding: 30px 0 10px 0;
     font-size: 2rem;
-    color: #ccc;
+    color: var(--cinza);
     text-align: center;
 }
 .sobre_mim p {
@@ -183,7 +194,7 @@ h2{
     padding: 10px 0;
     font-size: 1.2rem;
     line-height: 30px;
-    color: #ccc;
+    color: var(--cinza);
 }
 .container_detlhe_interesse {
     display: flex;
@@ -195,7 +206,7 @@ h2{
 }
 .detalhes_pessoais span{
     font-size: 1.5rem;
-    color: #ccc;
+    color: var(--cinza);
     font-weight: 500;
     margin: 0 0 20px 62px;
 }
@@ -207,18 +218,18 @@ table {
     font-size: 1.2rem;
 }
 th, td {
-    color: #ccc;
+    color: var(--cinza);
 }
 td a {
-    color: #ccc;
+    color: var(--cinza);
     text-decoration: none;
 }
 td a:hover {
-    color: #686767;
+    color: var(--cinzaEscuro);
     transition: 0.5s;
 }
 .status {
-    background-color: #59B09E;
+    background-color: var(--verde);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +247,7 @@ td a:hover {
 }
 .meus_interesses span, .finalizado span, .cursando span{
     font-size: 1.5rem;
-    color: #ccc;
+    color: var(--cinza);
     font-weight: 500;
     margin: 12px;
 }
@@ -256,20 +267,20 @@ td a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #363d42;
-    box-shadow: 1px 1px 3px #181a1d;
+    background-color: var(--cinzaEscuro2);
+    box-shadow: 1px 1px 3px var(--preto);
     border-radius: 5px;
     text-align: center;
 }
 figcaption {
-    color: #ccc;
+    color: var(--cinza);
     padding: 5px;
 }
 .icones_interesse img {
     width: 30px;
 }
 .cor_fundo_escuro_habilidade {
-    background-color: #15171a;
+    background-color: var(--pretoClaro);
     height: 380px;
 }
 .cursando_finalizados {
@@ -298,7 +309,7 @@ figcaption {
     justify-content: center;
     flex-direction: column;
     border-radius: 5px;
-    background-color: #363d42;
+    background-color: var(--cinzaEscuro2);
 }
 .cursando_finalizados img {
     width: 50px;
@@ -313,11 +324,11 @@ figcaption {
     width: 250px;
     height: 250px;
     margin: 10px;
-    background-color: #15171a;
+    background-color: var(--pretoClaro);
 }
 .cor_fundo_escuro {
     position: relative;
-    background-color: #15171a;
+    background-color: var(--pretoClaro);
 }
 .container_formulario {
     display: flex;
@@ -346,21 +357,21 @@ figcaption {
 label {
     display: block;
     font-size: 1.5rem;
-    color: #ccc;
+    color: var(--cinza);
     padding: 20px;
 }
 textarea {
-    background-color: #252A30;
+    background-color: var(--cinzaEscuro2);
     width: 500px;
     height: 180px;
-    color: #ccc;
+    color: var(--cinza);
     font-size: 1rem;
 }
 button {
     width: 150px;
     height: 40px;
-    background-color: #59B09E;
-    color: #ccc;
+    background-color: var(--verde);
+    color: var(--cinza);
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 2px #59B09E;
