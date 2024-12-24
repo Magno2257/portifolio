@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <link rel="stylesheet" href="./estilos/resposivel.css">
+    <link rel="stylesheet" href="src/estilos/estilos.css">
+    <link rel="stylesheet" href="src/estilos/resposivel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -18,16 +18,18 @@
                     <div class="logo">
                         <span>João Vitor</span>
                     </div>
-                    <div class="menu">
-                        <a href="#"><img src="imagens/menu-aberto.png" alt="menu"></a>
-                    </div>
-                    <div class="links">
-                        <nav>
-                            <a href="#inicio">Home</a>
-                            <a href="#sobre_mim">Sobre mim</a>
-                            <a href="#projetos">Projetos</a>
+                        <nav class="nav-link">
+                               <ul class="nav-list">
+                                    <li><a class="link-menu" href="#inicio">Home</a></li>
+                                    <li><a class="link-menu" href="#sobre_mim">Sobre mim</a></li>
+                                    <li><a class="link-menu" href="#projetos">Projetos</a></li>
+                               </ul>
+                               <div class="mobile-menu">
+                                    <div class="line1"></div>
+                                    <div class="line2"></div>
+                                    <div class="line3"></div>
+                                </div>
                         </nav>
-                    </div>
                 </div>
             </div>
         </div>
@@ -39,7 +41,7 @@
                     <div class="container_perfil">
                         <div class="efeito">
                             <div class="foto">
-                                <img src="imagens/minha.jpg" alt="Foto minha de perfil">
+                                <img src="src/imagens/minha.jpg" alt="Foto minha de perfil">
                             </div>
                         </div>
                         <div class="redes_sociais">
@@ -47,9 +49,9 @@
                                 <h1>João Vitor</h1>
                                 <span>developer Front-End</span>
                                 <div class="icones">
-                                    <a href="https://www.facebook.com/joaovitor.magno.3" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
-                                    <a href="https://github.com/Magno2257" target="_blank"><img src="imagens/github.png" alt="Github"></a>
-                                    <a href="https://www.linkedin.com/in/joão-vitor-magno-79b021288/" target="_blank"><img src="imagens/linkedin.png" alt="Linkedin"></a>
+                                    <a href="https://www.facebook.com/joaovitor.magno.3" target="_blank"><img src="src/imagens/facebook.png" alt="Facebook"></a>
+                                    <a href="https://github.com/Magno2257" target="_blank"><img src="src/imagens/github.png" alt="Github"></a>
+                                    <a href="www.linkedin.com/in/joao-vitor-magno" target="_blank"><img src="src/imagens/linkedin.png" alt="Linkedin"></a>
                                 </div>
                             </div>
                         </div>
@@ -79,9 +81,6 @@
                                         <th>Email</th>
                                     </tr>
                                     <tr>
-                                        <th>Website</th>
-                                    </tr>
-                                    <tr>
                                         <th>Status de Trabalho</th>
                                     </tr>
                                 </thead>
@@ -96,9 +95,6 @@
                                         <td><a href="mailto:joao.magon155@gmail.com">joao.magon155@gmail.com</a></td>
                                     </tr>
                                     <tr>
-                                        <td><div>vazio</div></td>
-                                    </tr>
-                                    <tr>
                                         <td><div class="status">Em Busca</div></td>
                                     </tr>
                                 </tbody>
@@ -109,22 +105,22 @@
                             <div class="icones_interesse">
                                 <figure class="imagens_interesses"> 
                                     <div>
-                                        <img src="imagens/controle-de-video-game.png" alt="Controle de video game" title="Games">
+                                        <img src="src/imagens/controle-de-video-game.png" alt="Controle de video game" title="Games">
                                         <figcaption>Games</figcaption>
                                     </div>
                                 
                                     <div>
-                                        <img src="imagens/aviao.png" alt="Avião" title="Viagem">
+                                        <img src="src/imagens/aviao.png" alt="Avião" title="Viagem">
                                         <figcaption>Viagem</figcaption>
                                     </div>
                                     
                                     <div>
-                                        <img src="imagens/fone-de-ouvido.png" alt="Fone de musica" title="Musica">
+                                        <img src="src/imagens/fone-de-ouvido.png" alt="Fone de musica" title="Musica">
                                         <figcaption>Musica</figcaption>
                                     </div>
                                     
                                     <div>
-                                        <img src="imagens/nota-de-dolar.png" alt="Dinheiro" title="Dinheiro">
+                                        <img src="src/imagens/nota-de-dolar.png" alt="Dinheiro" title="Dinheiro">
                                         <figcaption>Dinheiro</figcaption>
                                     </div>
                                     </figure>
@@ -143,11 +139,11 @@
                         <span>Cursos Finalizados</span>
                         <figure class="cursos_final">
                             <div class="html">
-                                <img src="imagens/html.png" alt="Icone HTML5" title="Icone HTML5">
+                                <img src="src/imagens/html.png" alt="Icone HTML5" title="Icone HTML5">
                                 <figcaption>HTML5</figcaption>
                             </div>
                             <div class="css">
-                                <img src="imagens/css-3.png" alt="Icone CSS3" title="Icone CSS3">
+                                <img src="src/imagens/css-3.png" alt="Icone CSS3" title="Icone CSS3">
                                 <figcaption>CSS3</figcaption>
                             </div>
                         </figure>
@@ -156,7 +152,7 @@
                         <span>Cursando</span>
                         <figure class="cursos_andamento">
                             <div class="javascript">
-                                <img src="imagens/script-java.png" alt="Icone JavaScript" title="Icone JavaScript">
+                                <img src="src/imagens/script-java.png" alt="Icone JavaScript" title="Icone JavaScript">
                                 <figcaption>JavaScript</figcaption>
                             </div>
                         </figure>
@@ -193,18 +189,19 @@
             <div class="limite">
                 <div class="container_formulario">
                     <div class="voltar">
-                        <a href="#inicio"> <img src="imagens/seta-para-cima.png" alt="Seta de volta para o topo"></a>
+                        <a href="#inicio"> <img src="src/imagens/seta-para-cima.png" alt="Seta de volta para o topo"></a>
                     </div>
                     <form action="POST">
                         <div class="formulario">
                             <label for="comentario">Comentario</label>
                             <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                            <button type="submit">Enviar</button>
+                            <button class="botao-texto" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
