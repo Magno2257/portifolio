@@ -43,5 +43,9 @@ class MobileNavbar {
 }
 
 // Cria uma nova instância do MobileNavbar e inicializa
-const mobileNavbar = new MobileNavbar();
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list li"
+);
 mobileNavbar.init();

@@ -12,7 +12,7 @@
   }
   .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 15vh;
     right: 0;
     width: 30vh;
     height: 40vh;
@@ -159,6 +159,9 @@
   }
 }
 @media (min-width: 769px) {
+  body {
+    overflow-x: hidden;
+  }
   .logo {
     font-size: 1.6rem;
   }
