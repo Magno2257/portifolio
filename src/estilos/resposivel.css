@@ -174,9 +174,7 @@
   .botao-menu img {
     display: none;
   }
-  nav {
-    justify-content: space-around;
-  }
+
   .link-menu {
     font-size: 1rem;
   }
@@ -228,10 +226,6 @@
   .finalizado span,
   .cursando span {
     font-size: 1.4rem;
-  }
-  .finalizado {
-    width: 230px;
-    height: 120px;
   }
   .cursos_final {
     justify-content: space-between;

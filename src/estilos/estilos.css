@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   list-style: none;
 }
 :root {
@@ -44,7 +43,7 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 }
 .logo {
   font-size: 1.8rem;
@@ -57,20 +56,20 @@ body {
 .nav-link {
   display: flex;
   align-items: center;
+  width: 50%;
+  justify-content: flex-end;
 }
 
 .nav-list {
   z-index: 1;
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
 }
 .nav-list li {
   letter-spacing: 3px;
   font-weight: 200;
+  margin: 5px;
 }
 
 .link-menu {
@@ -107,15 +106,12 @@ body {
   width: 32px;
   height: 45px;
   position: relative;
-  -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  cursor: pointer;
 }
 
 .mobile-menu div {
@@ -124,11 +120,9 @@ body {
   background-color: var(--cinza);
   height: 3px;
   width: 100%;
-  -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: 0.30s ease-in-out;
   -moz-transition: 0.30s ease-in-out;
   -o-transition: 0.30s ease-in-out;
   transition: 0.30s ease-in-out;
@@ -168,7 +162,6 @@ body {
 }
 .perfil {
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -177,12 +170,8 @@ body {
   z-index: 1;
 }
 .efeito {
-  position: absolute;
-  top: -43%;
-  left: 5%;
+ 
   background-color: var(--verdeEfeito);
-  width: 365px;
-  height: 365px;
   border-radius: 50%;
   z-index: 1;
   display: flex;
@@ -191,8 +180,6 @@ body {
 }
 .foto {
   background-color: var(--verde);
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -205,8 +192,6 @@ body {
 .redes_sociais {
   position: relative;
   background-color: var(--cinzaEscuro2);
-  width: 400px;
-  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,14 +206,11 @@ body {
 }
 .informacao_perfil h1 {
   text-align: center;
-  margin-top: 200px;
   padding: 10px;
   color: var(--cinza);
-  font-size: 3rem;
 }
 .informacao_perfil span {
   color: var(--cinza);
-  font-size: 1.1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -259,11 +241,10 @@ body {
 .sobre_mim {
   margin: 0 auto;
   text-align: center;
-  width: 800px;
+  
 }
 h2 {
   padding: 30px 0 10px 0;
-  font-size: 2rem;
   color: var(--cinza);
   text-align: center;
 }
@@ -271,7 +252,6 @@ h2 {
   width: 650px;
   text-align: center;
   padding: 10px 0;
-  font-size: 1.2rem;
   line-height: 30px;
   color: var(--cinza);
 }
@@ -284,7 +264,6 @@ h2 {
   width: 100%;
 }
 .detalhes_pessoais span {
-  font-size: 1.5rem;
   color: var(--cinza);
   font-weight: 500;
   margin: 0 0 20px 62px;
@@ -294,7 +273,6 @@ table {
   display: flex;
   padding: 30px;
   border-collapse: separate;
-  font-size: 1.2rem;
 }
 th,
 td {
@@ -328,7 +306,6 @@ td a:hover {
 .meus_interesses span,
 .finalizado span,
 .cursando span {
-  font-size: 1.5rem;
   color: var(--cinza);
   font-weight: 500;
   margin: 12px;
@@ -370,12 +347,10 @@ figcaption {
   justify-content: space-around;
 }
 .finalizado {
-  width: 250px;
-  height: 150px;
+  width: 245px;
 }
 .cursos_final {
   display: flex;
-  justify-content: space-around;
   padding: 30px 30px 0 0;
   text-align: center;
 }
@@ -400,7 +375,6 @@ figcaption {
 }
 .projetos {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
 }
