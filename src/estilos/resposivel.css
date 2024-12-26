@@ -1,6 +1,9 @@
 @media (min-width: 300px) and (max-width: 768px) {
-  body {
+  body{
     overflow-x: hidden;
+  }
+  * {
+    box-sizing: border-box;
   }
   .topo {
     width: 100%;
@@ -159,9 +162,6 @@
   }
 }
 @media (min-width: 769px) {
-  body {
-    overflow-x: hidden;
-  }
   .logo {
     font-size: 1.6rem;
   }
