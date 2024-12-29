@@ -191,17 +191,28 @@
                     <div class="voltar">
                         <a href="#inicio"> <img src="src/imagens/seta-para-cima.png" alt="Seta de volta para o topo"></a>
                     </div>
-                    <form action="POST">
                         <div class="formulario">
-                            <label for="comentario">Comentario</label>
-                            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                            <button class="botao-texto" type="submit">Enviar</button>
+                            <form action="https://formsubmit.co/ajax/joao.magon155@gmail.com" method="post" data-form>  
+                            <div>
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome">
+                            </div>
+                            <div>
+                                <label for="Email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="comentario">Mensagem</label>
+                                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="botao-texto" type="submit" data-button>Enviar</button>
+                        </form>
                         </div>
-                    </form>
                 </div>
             </div>
         </section>
     </main>
     <script src="src/js/script.js"></script>
+    <script src="src/js/formSubmit.js"></script>
 </body>
 </html>
